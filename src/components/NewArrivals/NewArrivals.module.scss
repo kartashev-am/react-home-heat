@@ -1,0 +1,79 @@
+@import '../root/root.scss';
+
+.NewArrivals {
+    margin-bottom: 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+
+    .NewArrivals__txt{
+        width: 38%;
+
+        height: 480px;
+        box-sizing: border-box;
+        padding: 50px;
+        border-radius: 30px;
+        background-color: $color-dark;
+        color: $color-light-grey;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        h1{
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        p{
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 150px;
+            height: 40px;
+            background-color: #ffffff70;
+            color: #ffffff;
+            text-decoration: none;
+            transition: 0.8s;
+            border-radius: 20px;
+
+            &:hover{
+                background-color: #ffffffa4;
+                transition: 0.2s;
+            }
+        }
+    
+
+    }
+
+    .card{
+        width: 60%;
+        height: 480px;
+        background-color: orange;
+        border-radius: 30px;
+    }
+    
+}
+
+/* --------------------------- */
+
+@media (max-width: 909px){
+    .NewArrivals{
+
+        .NewArrivals__txt{
+            width: 100%;
+        }
+
+
+        .card{
+            width: 100%;
+    }
+  }
+}

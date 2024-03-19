@@ -1,0 +1,26 @@
+@import '../root/root.scss';
+
+.discern{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+    width: 100%;
+
+    .discern__txt{
+        font-size: 38px;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+
+    .discern__cards{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+

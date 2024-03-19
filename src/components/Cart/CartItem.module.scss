@@ -1,0 +1,87 @@
+@import '../root/root.scss';
+
+.cart__item{
+        width: 100%;
+        max-width: 1050px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        border: 1px solid rgb(201, 201, 201);
+        border-radius: 30px;
+        margin-bottom: 10px;
+        padding-right: 20px;
+
+        .item__img{
+            width: 160px;
+            height: 160px;
+            background-color: orange;
+            border-radius: 30px;
+            margin-right: 10px;
+        }
+
+        .item__info{
+            width: 450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 60px;
+
+            h1{
+                font-size: 24px;
+                width: 100px;
+                text-align: left;
+            }
+        }
+
+        .item__quantity{
+            background-color: $color-light-grey;
+            border-radius: 20px;
+            width: 105px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+
+            span{
+                width: 20px;
+                text-align: center;
+            }
+
+            button{
+                border: none;
+                background-color: #fff;
+                width: 30px;
+                font-weight: 500;
+                font-size: 24px;
+                border-radius: 50%;
+                transition: 0.8s;
+
+                &:hover{
+                    background-color: $color-light;
+                    cursor: pointer; 
+                    transition: 0.2s;
+                }
+            }
+        }
+
+        .item__pretotal{
+            width: 120px;
+        }
+
+        .btn__del{
+            border: none;
+            font-size: 24px;
+            background-color: transparent;
+            height: 50px;
+            transition: 0.8s;
+
+            &:hover{
+                color: rgb(255, 0, 0);
+                cursor: pointer; 
+                transition: 0.2s;
+            }
+        } 
+}
+

@@ -1,0 +1,186 @@
+@import '../root/root.scss';
+
+nav{
+    width: 100%;
+    margin-bottom: 30px;
+    background-color: $bg-color-light;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+
+    .logo{
+        font-size: 16px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        color: $color-black;
+
+        h1{
+            display: block;
+        }
+    }
+
+    .header__link{
+        font-weight: 700;
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        gap: 35px;
+
+        .menu{
+            color: $color-black;
+
+            background-color: $color-light-grey;
+            border-radius: 20px;
+            padding: 7px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            
+            .icon__bg {
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                background-color: rgb(255, 255, 255, 0.7);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .icon{
+                   font-size: 18px;
+                }
+            }
+            
+        }
+
+        .menu__active {
+            color: $color-black;
+
+            background-color: $color-light;
+            border-radius: 20px;
+            padding: 7px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+               
+        
+            .icon__bg {
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                background-color: rgb(255, 255, 255, 0.7);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .icon{
+                   font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .header__btn{
+        color: $color-black;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+ 
+        .btn__header{
+            font-family: $font;
+            font-size: 24px;
+            padding: 7px;
+            cursor: pointer;
+            border: none;
+            color: $color-dark;
+            font-weight: 700;
+            border-radius: 16px;
+
+            position: relative;
+
+
+            &::before{
+                position: absolute;
+                border-radius: 50%;
+                font-weight: 500;
+                font-size: 12px;
+                content: attr(data-count);
+                top: 0;
+                right: 0;
+                background: red;
+                color: white;
+                width: 15px;
+                height: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+
+
+/*--------------------------------*/
+
+
+
+@media (max-width: 768px){
+    nav{
+        .logo{
+            font-size: 14px;
+        }
+
+        .header__link{
+            font-size: 14px;
+            gap: 6px;
+
+            .icon__bg{
+                width: 22px;
+                height: 22px;
+
+                .icon{
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .header__btn{
+            .btn__header{
+                font-size: 20px;
+            }
+        }
+    }
+}
+
+
+/*--------------------------------*/
+
+
+@media (max-width: 430px){
+    nav{
+        .logo{
+            font-size: 12px;
+        }
+
+        .header__link{
+            font-size: 12px;
+            gap: 4px;
+
+            .icon__bg{
+                width: 20px;
+                height: 20px;
+
+                .icon{
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .header__btn{
+            .btn__header{
+                font-size: 20px;
+            }
+        }
+    }
+}

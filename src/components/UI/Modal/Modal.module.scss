@@ -1,0 +1,33 @@
+.modal{
+    z-index: 1;
+    position: fixed;
+    display: none;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0, 0.5);
+
+    .modal__inner{
+        width: 600px;
+        height: 600px;
+        padding: 10px;
+        margin: auto;
+        border-radius:10px;
+        background-color: azure;
+        border: 1px solid gray;
+    }
+
+    &.active{
+        display: flex;
+    }
+    
+
+    .modal__close{
+        width: min-content;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

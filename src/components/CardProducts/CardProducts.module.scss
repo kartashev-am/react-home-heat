@@ -1,0 +1,104 @@
+@import '../root/root.scss';
+
+
+.cardProducts{
+    width: 350px;
+    height: 380px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $color-light;
+    transition: 1s;
+
+    &:hover{
+        box-shadow: 0px 0px 10px black;
+        transition: 0.2s;
+    }
+
+    .cardProducts__img{
+        width: 350px;
+        height: 300px;
+        background-color: #ffffff;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        img{
+            width: 300px;
+            height: 300px;
+        }
+
+        .btn__like{
+            height: 50px;
+            width: 50px;
+            font-size: 28px;
+            background-color: transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            top: 0%;
+            right: 0%; 
+            position: absolute;
+            transition: 1s;
+        }
+    }
+
+    .cardProducts__body{
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        
+        .cardProducts__info{
+            gap: 20px;
+            padding-left: 8px;
+            
+            h1{
+                margin: 0 0 8px 0;
+                padding: 0;
+                font-size: 18px;
+                font-weight: 300;
+            }
+        
+            p{  
+                margin: 0;
+                padding: 0;
+                font-size: 12pt;
+                font-weight: 700;
+            }
+        }
+
+        button{
+            width: 40px;
+            height: 40px;
+            margin-right: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+            color: grey;
+            border: 1px solid grey;
+            border-radius: 10px;
+            background-color: $color-light;
+            transition: 1s;
+
+            &:hover{
+                border-color: $color-dark;
+                color: $color-dark;
+                transition: 0.2s;
+            }
+
+            &:disabled{
+                border: none;
+                color: $color-light;
+                background-color: $color-dark;
+                transition: 0.8s;
+            }
+        }
+    }
+
+}

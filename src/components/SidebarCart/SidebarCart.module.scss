@@ -1,0 +1,19 @@
+.sidebarCart{
+    border: 1px solid grey;
+    border-radius: 20px;
+    background-color: #fff;
+    height: 300px;
+    margin-bottom: 40px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    &:hover{
+        overflow-y: scroll;
+    }
+
+    &::-webkit-scrollbar {
+        width: 0px; 
+    }
+
+}

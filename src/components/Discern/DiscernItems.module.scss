@@ -1,0 +1,85 @@
+@import '../root/root.scss';
+
+.card{
+    /* max-width: 305px; */
+    width: 24%;
+    height: 300px;
+    padding: 10px 20px;
+    background-color: $color-light;
+    border-radius: 20px;
+    transition: 0.8s;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+    &:hover{
+        background-color: #e6f7cb;
+        transition: 0.2s;
+    }
+
+    span{
+        font-size: 24px;
+    }
+    
+    h1{
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    p{
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+}
+
+
+
+/* ------------------------------------------------------------ */
+
+
+@media (max-width: 1200px){
+    .card{
+        height: 124;
+
+        span{
+            font-size: 22px;
+        }
+        
+        h1{
+            font-size: 18px;
+        }
+    
+        p{
+            font-size: 14px;
+        }
+    }
+  }
+  
+/* ------------------------------------------------------------ */
+
+
+@media (max-width: 909px){
+    .card{
+        width: 100%;
+        height: 305px;
+
+         span{
+            font-size: 32px;
+        }
+        
+        h1{
+            font-size: 24px;
+        }
+    
+        p{
+            font-size: 18px;
+        }
+    }
+  }
+
+/* ------------------------------------------------------------ */
+
+
